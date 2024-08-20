@@ -1,10 +1,15 @@
+import Body from "./Body/Body"
+import Footer from "./Footer/Footer"
+import Header from "./Header/Header"
 
 
 function App() {
   
   return (
-    <div className="text-5xl bg-red-600">
- Youtube
+    <div className="">
+     <Header/>
+     <Body/>
+     <Footer/>
     </div>
   )
 }
