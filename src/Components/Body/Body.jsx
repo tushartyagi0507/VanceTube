@@ -4,10 +4,9 @@ import SideBar from "./SideBar"
 
 const Body = () => {
   return (
-    <div>
-        Body
-      <SideBar/>
-      <Container/>
+    <div className="w-screen flex">
+     <SideBar/>
+     <Container/>
     </div>
   )
 }
