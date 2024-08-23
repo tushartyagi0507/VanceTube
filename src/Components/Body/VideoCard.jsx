@@ -3,14 +3,14 @@
 
 const VideoCard = (props) => {
     const {info} = props
-    console.log(info)
+    // console.log(info)
     if(info === null || info === undefined) return
     const { snippet} = info;
     let { thumbnails, title, channelTitle, publishedAt } = snippet;
 
 
   return (
-<div className="videocard w-[32%] m-1 rounded-lg shadow-lg p-1 ml-2 border mb-5 cursor-pointer hover:border-b-gray-400 hover:scale-105">
+<div className="videocard w-[26dvw] h-fit m-1 rounded-lg shadow-lg p-1 ml-2 border mb-5 cursor-pointer hover:border-b-gray-400 hover:scale-105">
           <img
             className="rounded-md h-44 w-full"
             src={thumbnails?.medium?.url}
@@ -22,5 +22,5 @@ const VideoCard = (props) => {
         </div>
   )
 }
-
+ 
 export default VideoCard

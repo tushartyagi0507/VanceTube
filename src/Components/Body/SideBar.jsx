@@ -23,7 +23,7 @@ const SideBar = () => {
       {sidebarStatus 
       ?
        (
-        <div className="sideBar w-60 p-8 shadow-lg h-auto bg-white z-0 pt-6 left-0 sticky">
+        <div className="fixed left-0 top-16 w-60 p-8 shadow-lg h-auto bg-white pt-6">
          <SideBarFixed/>
 
           <h1 className="pt-4 font-bold text-md">Explore</h1>

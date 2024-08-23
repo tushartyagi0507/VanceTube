@@ -1,12 +1,12 @@
-import Container from "./Container"
+import { Outlet } from "react-router-dom"
 import SideBar from "./SideBar"
 
 
 const Body = () => {
   return (
-    <div className="w-screen flex">
+    <div className="w-screen flex mt-16">
      <SideBar/>
-     <Container/>
+     <Outlet/>
     </div>
   )
 }

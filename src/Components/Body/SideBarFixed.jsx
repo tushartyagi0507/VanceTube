@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 
@@ -8,11 +9,13 @@ const SideBarFixed = () => {
   return (
     <div className="">
             <ul>
+            <Link to="/">
             <li
               className="py-1 cursor-pointer flex items-center"
               onClick={handleClick}
             >
-              <svg
+          
+             <svg
                 className="mr-2"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -25,6 +28,7 @@ const SideBarFixed = () => {
               </svg>
               Home
             </li>
+            </Link>
             <li
               className="py-1 cursor-pointer flex items-center"
               onClick={handleClick}
