@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    font-family: sans-serif;
+}
+
 .sideBar li:hover{
     background-color: rgb(190, 179, 179);
     width: 11rem;
