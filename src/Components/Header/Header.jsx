@@ -34,7 +34,7 @@ const Header = () => {
     const data = await fetch(import.meta.env.VITE_Youtube_Search + query);
     const json = await data.json();
     console.log(query);
-    console.log(json[1]);
+    // console.log(json[1]);
     dispatch(
       addCache({
         [query]: json[1],
@@ -46,6 +46,11 @@ const Header = () => {
   const handleMenu = () => {
     dispatch(toggleMenu());
   };
+
+  const handleSearchVideo = (e)=>{
+   console.log(e)
+  }
+
   return (
     <div className="fixed top-0 left-0 w-full">
       <div className="flex items-center justify-between border-b-2 shadow-md bg-gray-50 px-6 py-2 h-[4rem]">
@@ -86,8 +91,8 @@ const Header = () => {
                 {suggestions.map((sug) => (
                   <>
                     <li
-                      key={sug}
-                      className="hover:bg-gray-200 text-lg font-medium"
+                      key={sug} onClick={()=> handleSearchVideo()}
+                      className="hover:bg-gray-200 text-lg font-medium "
                     >
                       <FontAwesomeIcon
                         icon={faMagnifyingGlass}

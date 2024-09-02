@@ -21,7 +21,7 @@ const SideBar = () => {
   return (
     <>
       {sidebarStatus 
-      ?
+      &&
        (
         <div className="fixed left-0 top-16 w-60 p-8 shadow-lg h-auto bg-white pt-6">
          <SideBarFixed/>
@@ -60,10 +60,12 @@ const SideBar = () => {
             <li className="py-1 cursor-pointer flex items-center">Gaming</li>
           </ul>
         </div>
-      ): 
-      (<div className="px-5 w-fit shadow-lg h-screen pt-6">
-        <SideBarFixed/>
-      </div>)}
+      )
+      // (<div className="px-5 w-fit shadow-lg h-screen pt-6">
+      //   <SideBarFixed/>
+      // </div>)
+    }
+
     </>
   );
 };

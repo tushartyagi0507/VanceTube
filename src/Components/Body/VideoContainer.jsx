@@ -14,7 +14,7 @@ fetchVideos()
   const fetchVideos = async ()=>{
   try{const data = await fetch(import.meta.env.VITE_Youtube_API)
   const json = await data.json()
-  console.log(json)
+  // console.log(json)
   setvideos(json?.items)
 }
   catch(err){
