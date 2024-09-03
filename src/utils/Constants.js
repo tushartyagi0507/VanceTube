@@ -43,7 +43,7 @@ export const data = [
             {
               "id": 6,
               "name": "Aayushi Tyagi",
-              "content": "This is a nested reply to the reply",
+              "content": "This is a nested reply to the reply, and this is a bit longer reply to demonstrate how it would look like",
               "votes": 2,
               "timestamp": "2024-06-16T09:45:00Z",
               "replies": []
@@ -70,7 +70,7 @@ export const data = [
         {
           "id": 9,
           "name": "Parijat",
-          "content": "This is a reply to the fourth comment",
+          "content": "This is a reply to the fourth comment, and this is a bit longer reply to demonstrate how it would look like",
           "votes": 5,
           "timestamp": "2024-06-16T07:30:00Z",
           "replies": []
@@ -87,7 +87,7 @@ export const data = [
     },
     {
       "id": 11,
-      "name": "Nikunj Kaushik",
+      "name": "Nikunj",
       "content": "This is the sixth comment",
       "votes": 2,
       "timestamp": "2024-06-15T10:00:00Z",
@@ -127,3 +127,5 @@ export const data = [
     }
   ]
   
+
+  export const LIVE_CHAT_COUNT = 20
