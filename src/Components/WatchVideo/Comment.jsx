@@ -9,13 +9,13 @@ const Comment = ({comment}) => {
  const [showreplies, setshowreplies ] = useState(true)
 
   return (
-    <div className="w-full px-2 my-2 bg-gray-100 rounded-lg text-md p-2 flex gap-3" >
+    <div className="w-full px-2 my-2 bg-gray-800 rounded-lg text-md p-2 flex gap-3" >
    <FontAwesomeIcon icon={faUser} className="text-lg my-1 items-center"/>
         <div>
         <h3 className="font-bold">{name}</h3>
         <p className=" mt-1 pl-{20%}">{content}</p> 
-   <div className="flex gap-3 w-max">
-   <p className="text-sm">{likes} ♥️,</p>
+   <div className="flex gap-3 w-max mt-1">
+   <p className="text-sm">{likes} likes,</p>
    <p className="text-sm"> on-{new Date(timestamp).toLocaleString()}</p>
    </div>
    

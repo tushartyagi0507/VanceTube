@@ -27,17 +27,18 @@ import { useDispatch } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import CommentsContainer from "./CommentContainer";
 import LiveChat from "./LiveChat";
+import { closeMenu } from "../../Store/appSlice";
 
 const WatchPage = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
 
-  // useEffect(() => {
-  //   dispatch(closeMenu());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(closeMenu());
+  }, []);
 
   return (
-    <div className="px-5 flex flex-col w-full ml-[16dvw] mt-2">
+    <div className="px-5 flex flex-col w-screen mt-2">
       <div className="flex flex-col lg:flex-row">
 
         <div className="flex-1 ">
@@ -52,7 +53,7 @@ const WatchPage = () => {
           ></iframe>
         </div>
 
-        <div className="w-full lg:w-1/3">
+        <div className="w-full lg:w-1/4">
           <LiveChat />
         </div>
       </div>

@@ -23,9 +23,8 @@ function App() {
   }])
   
   return (
-  
     <Provider store={store}>
-        <div className="">
+        <div className="bg-black text-white">
      <Header/>
     <RouterProvider router={router}/>
      <Footer/>

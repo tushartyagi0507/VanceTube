@@ -72,27 +72,27 @@ console.log(text)
   settext("")
   }
 
-  
-
   return (
     <div
       ref={chatContainerRef}
-      className="border-2 ml-2 border-black p-2 h-[500px] overflow-y-auto flex flex-col-reverse bg-slate-200 
-      overflow-x-hidden"
+      className="border-2 ml-2 border-[#333] bg-[#212121] p-2 h-[500px] overflow-y-auto flex flex-col-reverse 
+      overflow-x-hidden relative"
     >
 
-<div className=" bottom-2 flex w-full mx-[3%] gap-2 mt-2">
-        <input type="text" placeholder="type a message" className="w-[75%] px-2" value={text}
+<div className=" bottom-2 flex w-full mx-auto gap-2 my-auto h-12 absolute">
+        <input type="text" placeholder="type a message" className=" w-[75%] h-10 px-4 py-2 bg-[#121212] border-2 border-[#444] rounded-l-lg text-white focus:outline-none" value={text}
         onChange={handleText} onKeyDown={(e)=> {if(e.key == "Enter") handleSend()}}
         />
-        <button className="py-1 px-2 bg-blue-300" onClick={handleSend}>Send</button>
+        <button className="px-2 h-10 bg-[#065fd4]" onClick={handleSend}>Send</button>
       </div>
+
 
 {chatMessages.map((c, index) => (
         <div key={index} >
           <ChatMessage name={c.name} message={c.message} />
         </div>
       ))}
+
 
     </div>
   );

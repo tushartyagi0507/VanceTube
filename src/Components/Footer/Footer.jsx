@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="text-center bottom-0">Made with ♥️ by Tushar Tyagi</div>
   )
 }
 

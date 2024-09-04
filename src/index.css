@@ -4,15 +4,9 @@
 
 *{
     font-family: sans-serif;
+
 }
 
-.sideBar li:hover{
-    background-color: rgb(190, 179, 179);
-    width: 11rem;
-    padding: 0 5px;
-    border-radius: 10px;
-    height: 3rem;
-}
 
 .scrollbar::-webkit-scrollbar {
     display: none;
