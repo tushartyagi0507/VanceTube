@@ -59,11 +59,11 @@ const LiveChat = () => {
 
   const handleText = (e)=>{
 settext(e.target.value)
-console.log(text)
+// console.log(text)
   }
 
   const handleSend = ()=>{
-    console.log("sent")
+    // console.log("sent")
     dispatch(addMessage({
       name: "Tushar Tyagi",
       message: text,
@@ -75,7 +75,7 @@ console.log(text)
   return (
     <div
       ref={chatContainerRef}
-      className="border-2 ml-2 border-[#333] bg-[#212121] p-2 h-[500px] overflow-y-auto flex flex-col-reverse 
+      className="scrollbar border-2 ml-2 border-[#333] bg-[#212121] p-2 h-[500px] overflow-y-auto flex flex-col-reverse 
       overflow-x-hidden relative"
     >
 

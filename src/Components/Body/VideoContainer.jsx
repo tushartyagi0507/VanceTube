@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import VideoCard from "./VideoCard"
 import { Link } from "react-router-dom"
-import { faL } from "@fortawesome/free-solid-svg-icons"
+
 
 
 const VideoContainer = () => {
@@ -12,13 +12,14 @@ const VideoContainer = () => {
 
   useEffect(()=> {
  fetchVideos()
+//  console.log(videos)
   }, [])
 
   useEffect(()=>{
     const handleScroll = ()=>{
       if( document.documentElement.scrollTop + document.documentElement.clientHeight + 1 >= document.documentElement.scrollHeight)
         {
-        console.log(nextPageToken)
+        // console.log(nextPageToken)
         setisShowLoading(true)
         fetchVideos(nextPageToken)
       }
@@ -31,7 +32,7 @@ return ()=> window.removeEventListener("scroll", handleScroll)
   const fetchVideos = async (pageToken = "")=>{
   try{const data = await fetch(import.meta.env.VITE_Youtube_API+pageToken)
   const json = await data.json()
-  console.log(json)
+  // console.log(json)
   setnextPageToken(json?.nextPageToken)
   setvideos((prev)=> [...prev, ...json.items])
   setisShowLoading(false)
@@ -39,7 +40,6 @@ return ()=> window.removeEventListener("scroll", handleScroll)
   catch(err){
 console.log(err)
   }
-
 
   }
   return (
