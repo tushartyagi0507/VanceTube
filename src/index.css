@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 *{
-    font-family: sans-serif;
+   font-family: sans-serif;
    box-sizing: border-box;
+
 }
+
+
+body{
+  background-color: black;
+  min-width: 100vw;
+}
+
 
 .scrollbar::-webkit-scrollbar-track {
     border-radius: 100vh;

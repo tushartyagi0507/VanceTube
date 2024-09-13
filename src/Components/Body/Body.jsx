@@ -8,7 +8,7 @@ const Body = () => {
   return (
     <>
     <Header/>
-    <div className="scrollbar flex mt-16 bg-black">
+    <div className=" flex mt-16 bg-black min-[200px]:text-xs min-[400px]:text-sm text-base">
    <SideBar/>
    <Outlet/>
     </div>

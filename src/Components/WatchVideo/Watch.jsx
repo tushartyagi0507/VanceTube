@@ -44,12 +44,13 @@ const WatchPage = () => {
         <div className="flex-1 ">
           <iframe
             width="100%" // Responsive width
-            height="500" // Fixed height
+            // height="500" // Fixed height
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            className="h-[62dvh]"
           ></iframe>
         </div>
 

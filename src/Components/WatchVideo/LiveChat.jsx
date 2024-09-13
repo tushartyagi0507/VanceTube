@@ -75,7 +75,7 @@ settext(e.target.value)
   return (
     <div
       ref={chatContainerRef}
-      className="scrollbar border-2 ml-2 border-[#333] bg-[#212121] p-2 h-[500px] overflow-y-auto flex flex-col-reverse 
+      className="scrollbar border-2 ml-2 border-[#333] bg-[#212121] p-2 h-[62dvh] overflow-y-auto flex flex-col-reverse 
       overflow-x-hidden relative"
     >
 

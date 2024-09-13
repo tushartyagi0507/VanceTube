@@ -75,28 +75,29 @@ const Header = () => {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-black text-white z-50">
-      <div className="flex items-center justify-between shadow-md px-6 py-2 h-[4rem]">
+    <div className="fixed top-0 left-0 min-w-full bg-black text-white z-50 flex items-center shadow-md px-6 py-2 h-[4rem] justify-between
+   ">
+      {/* <div className="flex items-center shadow-md px-6 py-2 h-[4rem]"> */}
         <div className="flex gap-4 items-center">
           <span onClick={handleMenu} className="cursor-pointer">
             {" "}
-            <FontAwesomeIcon icon={faBars} className="h-6 " />
+            <FontAwesomeIcon icon={faBars} className="md:h-6 h-4" />
           </span>
-          <img className="h-9" src="https://lh3.googleusercontent.com/rormhrw_yZt2v1OKZBaiFCSt8b8QU02kEKiuilfgnpGkOMQd87xm7b7SyIlGoHsL18M" alt="V-logo"/>
-          <span className="font-bold text-lg">VanceTube</span>
+          <img className="md:h-9 h-6" src="https://lh3.googleusercontent.com/rormhrw_yZt2v1OKZBaiFCSt8b8QU02kEKiuilfgnpGkOMQd87xm7b7SyIlGoHsL18M" alt="V-logo"/>
+          <span className="font-bold sm:inline-block md:text-xl text-sm min-[200px]:hidden">VanceTube</span>
         </div>
 
-        <div  className="flex justify-between border-gray-400 border-2 outline-1 w-[40dvw] my-auto rounded-xl h-9">
-          <div className="px-2 self-center" >
+        <div  className="flex border-gray-400 border-2 outline-1 md:rounded-xl md:h-9 h-6 w-[40dvw] lg:p-1 p-3">
+          <div className="md:px-2 self-center flex justify-between w-full">
             <input
-            ref={focusRef}
+              ref={focusRef}
               value={query}
               onFocus={() => setshowSuggestion(true)}
               // onBlur={() => setshowSuggestion(false)}
               onChange={(e) => setquery(e.target.value)}
               type="text"
               placeholder="Search"
-              className="pb-1 self-center outline:none w-[37dvw] focus:outline-none focus-within:border-none bg-inherit"
+              className="text-sm md:text-base pb-1 self-center outline:none focus:outline-none focus-within:border-none bg-inherit w-[90%] border-none"
               
             />
             <span className="bg-inherit self-center">
@@ -105,6 +106,7 @@ const Header = () => {
               />
             </span>
           </div>
+
           {showSuggestion && (
             <div className="fixed mt-8 bg-[#282828] rounded-lg shadow-md px-2 w-[40dvw] text-white z-600">
               <ul className="flex flex-col gap-1">
@@ -126,10 +128,10 @@ const Header = () => {
           )}
         </div>
 
-        <div>
-          <FontAwesomeIcon icon={faUser} className="h-7" />
+        <div className="">
+          <FontAwesomeIcon icon={faUser} className="md:h-9 h-6" />
         </div>
-      </div>
+      {/* </div> */}
     
     </div>
   );

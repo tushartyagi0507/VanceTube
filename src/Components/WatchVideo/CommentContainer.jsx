@@ -77,7 +77,7 @@ import Comment from "./Comment"
 
 const CommentsContainer = () => {
   return (
-    <div className="my-6 bg-gray-800">
+    <div className="my-6 bg-gray-800  min-w-full">
      <h1 className="font-bold text-2xl px-6">Comments:</h1>
      <div>
       { data.map(
