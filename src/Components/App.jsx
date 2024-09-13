@@ -3,7 +3,7 @@ import store from "../Store/store"
 import Body from "./Body/Body"
 import { Provider } from "react-redux"
 import Container from "./Body/Container"
-import Watch from "./WatchVideo/watch"
+import Watch from "./WatchVideo/Watch"
 import SearchedResult from "./Search/SearchedResult"
 
 
